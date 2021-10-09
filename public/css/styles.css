@@ -1,0 +1,69 @@
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    /* first is for top and bottom and second is for right and left */
+    margin: 0 auto;
+    /* making sure that when the window is small it doesn't push to the left. */
+    padding: 0 16px;
+
+    /* In order to use flex box we need to set the body to display flex */
+    display: flex;
+    /* Column will make each one below the other just like we had before. */
+    flex-direction: column;
+    /* vh = view port height which is the box where the content shows up */
+    min-height: 100vh;
+}
+
+.main-content {
+    /* Take up all leftover space. */
+    flex-grow: 1;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    /* for spacing: margin puts space outside the box whereas padding inside the box */
+    /* single value used on all sides */
+    padding: 16px 0;
+    margin-top: 16px;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+/* targetting our links just in header */
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+
+}
+
+.portrait {
+    width: 250px;
+}
+
+.main-content {
+
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    border: 1px solid #888888;
+    cursor: pointer;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
